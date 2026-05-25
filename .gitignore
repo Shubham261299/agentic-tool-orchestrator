@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Project artifacts
+data/memory.json
+test_outputs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Playwright
+.playwright/
