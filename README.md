@@ -99,14 +99,18 @@ Auto-generated documentation with one-click testing:
 ### Multi-Tool Reasoning
 Given a single natural-language request — *"Create a folder called demo, write the current time into time.txt inside it, then list everything"* — the agent autonomously chains 4 tools:
 
-![Multi-tool response](assets/multi-tool-response.png)
+![Multi-tool response](assets/multi-tool-response1.png)
+![Multi-tool response](assets/multi-tool-response2.png)
+
 
 The `tool_calls` array in the response shows the full reasoning trace: `get_current_time` → `execute_shell_command` (mkdir) → `notepad_write` → `list_directory`. **No manual orchestration — the agent figured out the sequence itself.**
 
 ### LLM-as-Judge Evaluation
 The judge endpoint scores agent outputs against a structured rubric. Below: same judge correctly distinguishes a precise answer (95+) from a vague one (20-):
 
-![Judge comparison](assets/judge-comparison.png)
+![Judge comparison](assets/judge-comparison1.png)
+![Judge comparison](assets/judge-comparison2.png)
+
 
 This is the **eval pattern used by LangSmith, Ragas, and OpenAI Evals** — productionized as a REST endpoint.
 
