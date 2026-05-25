@@ -101,6 +101,7 @@ Given a single natural-language request — *"Create a folder called demo, write
 
 ![Multi-tool response](assets/multi-tool-response1.png)
 ![Multi-tool response](assets/multi-tool-response2.png)
+![Multi-tool response](assets/multi-tool-response.png)
 
 
 The `tool_calls` array in the response shows the full reasoning trace: `get_current_time` → `execute_shell_command` (mkdir) → `notepad_write` → `list_directory`. **No manual orchestration — the agent figured out the sequence itself.**
